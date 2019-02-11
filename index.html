@@ -11,14 +11,19 @@
     <header>
       <div class="container wrapper">
         <div class="logo">
-          <img src="assets/sketchthat-logo.png" alt="sketchthat logo" height="48" />
+          <img src="./assets/sketchthat-logo.png" alt="sketchthat logo" />
         </div>
       </div>
     </header>
     <div class="primary-wrapper">
       <div class="container">
         <div class="intro">
-          <img src="./assets/avatar.png" alt="avatar" />
+          <picture>
+            <source srcset="./assets/avatar.webp" type="image/webp" />
+            <source srcset="./assets/avatar.jxr" type="image/vnd.ms-photo" />
+            <source srcset="./assets/avatar.jp2" type="image/jp2" />
+            <img srcset="./assets/avatar.png" alt="avatar" />
+          </picture>
           <h1>Michael Kimpton</h1>
           <p>Team Lead &amp; Software Engineer from Melbourne Australia. </p>
           <p>Background in NodeJS, Typescript, Angular, React, LEMP &amp; LAMP stacks.</p>
@@ -81,11 +86,11 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
-      function showContainer() {
+      var showContainer = () => {
         document.getElementById('hiddenContainer').classList.remove('hidden');
 
         return false;
-      }
+      };
     </script>
   </body>
 </html>
