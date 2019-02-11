@@ -113,6 +113,9 @@ header .wrapper .logo {
   .intro p {
     font-size: 45px;
   }
+  .email {
+    font-size: 45px;
+  }
   .links-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
