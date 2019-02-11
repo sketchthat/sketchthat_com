@@ -100,6 +100,19 @@ header .wrapper .logo {
   .container {
     width: 100%;
   }
+  header {
+    padding: 10px;
+  }
+  .intro {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .intro h1 {
+    font-size: 60px;
+  }
+  .intro p {
+    font-size: 45px;
+  }
   .links-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -108,6 +121,9 @@ header .wrapper .logo {
   }
   .links-wrapper .external {
     width: 33%;
+  }
+  .links-wrapper .external img {
+    width: 200px;
   }
 }
 /*# sourceMappingURL=stylesheet.css.map */
