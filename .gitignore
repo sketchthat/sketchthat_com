@@ -1,0 +1,7 @@
+assets/stylesheet.css
+assets/stylesheet.css.map
+node_modules
+.firebaserc
+.DS_Store
+dist
+.firebase

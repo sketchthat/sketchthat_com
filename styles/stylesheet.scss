@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+$color-primary: #009976;
+$color-secondary: #c5f9ed;
+$color-nav-link: #777;
+$color-white: #fff;
+
+$container-desktop-width: 1140px;
+
+$font-primary: 'Roboto', sans-serif;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: $container-desktop-width;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  font-family: $font-primary;
+}
+
+.primary-wrapper {
+  background-color: $color-primary;
+}
+
+header {
+  background: $color-white;
+
+  .wrapper {
+    padding: 5px 0;
+    height: 50px;
+    top: 0;
+
+    .logo {
+      height: 50px;
+      width: auto;
+      flex-grow: 1;
+    }
+  }
+}
+
+.intro {
+  width: 100%;
+  margin: 50px 0;
+  color: $color-secondary;
+  font-size: 18px;
+  text-align: center;
+
+  img {
+    border-radius: 75px;
+    width: 140px;
+    border: 5px solid $color-white;
+  }
+}
+
+.links-wrapper {
+  flex-wrap: nowrap;
+  text-align: center;
+
+  .external {
+    align-self: center;
+    width: 16%;
+    margin-top: 50px;
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      height: auto;
+      width: 75px;
+    }
+  }
+}
+
+.email {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+  justify-content: center;
+
+  span {
+    color: $color-primary;
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(5),
+    &:nth-child(7) {
+      display: none;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: $container-desktop-width) {
+  .container {
+    width: 100%;
+  }
+
+  .links-wrapper {
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    .external {
+      width: 33%;
+    }
+  }
+}
