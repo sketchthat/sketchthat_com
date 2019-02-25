@@ -9,7 +9,8 @@ $color-white: #fff;
 $container-desktop-width: 1140px;
 
 $font-primary: 'Roboto', sans-serif;
-$font-responsive-large: 45px;
+$font-h1-responsive-large: 40px;
+$font-responsive-large: 30px;
 
 body {
   margin: 0;
@@ -37,9 +38,11 @@ header {
     top: 0;
 
     .logo {
-      height: 50px;
-      width: auto;
-      flex-grow: 1;
+      img {
+        height: 50px;
+        width: auto;
+        flex-grow: 1;
+      }
     }
   }
 }
@@ -113,7 +116,7 @@ header {
     padding-right: 10px;
 
     h1 {
-      font-size: 60px;
+      font-size: $font-h1-responsive-large;
     }
 
     p {
@@ -133,7 +136,7 @@ header {
       width: 33%;
 
       img {
-        width: 200px;
+        width: 100px;
       }
     }
   }

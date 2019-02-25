@@ -30,7 +30,7 @@ header .wrapper {
   top: 0;
 }
 
-header .wrapper .logo {
+header .wrapper .logo img {
   height: 50px;
   width: auto;
   -webkit-box-flex: 1;
@@ -108,13 +108,13 @@ header .wrapper .logo {
     padding-right: 10px;
   }
   .intro h1 {
-    font-size: 60px;
+    font-size: 40px;
   }
   .intro p {
-    font-size: 45px;
+    font-size: 30px;
   }
   .email {
-    font-size: 45px;
+    font-size: 30px;
   }
   .links-wrapper {
     -ms-flex-wrap: wrap;
@@ -126,7 +126,7 @@ header .wrapper .logo {
     width: 33%;
   }
   .links-wrapper .external img {
-    width: 200px;
+    width: 100px;
   }
 }
 /*# sourceMappingURL=stylesheet.css.map */
