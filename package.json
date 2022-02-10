@@ -5,7 +5,7 @@
   "main": "echo \"Run \"npm run build\"\"",
   "devDependencies": {
     "html-minify": "^0.3.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "uglifycss": "0.0.29"
   },
   "scripts": {
