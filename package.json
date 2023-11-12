@@ -5,15 +5,13 @@
   "main": "echo \"Run \"npm run build\"\"",
   "devDependencies": {
     "html-minify": "^0.3.2",
-    "node-sass": "^4.13.1",
-    "uglifycss": "0.0.29"
+    "sass": "^1.69.5"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build:dist && npm run build:css && npm run build:uglifycss && npm run build:minifyhtml && npm run build:assets && npm run build:favicon && npm run build:invoice",
+    "build": "npm run build:dist && npm run build:css && npm run build:minifyhtml && npm run build:assets && npm run build:favicon && npm run build:invoice",
     "build:dist": "rm -Rf ./dist && mkdir ./dist",
-    "build:css": "node-sass --include-path scss ./styles/stylesheet.scss ./dist/styles/stylesheet.pretty.css",
-    "build:uglifycss": "uglifycss ./dist/styles/stylesheet.pretty.css > ./dist/styles/stylesheet.css && rm ./dist/styles/stylesheet.pretty.css",
+    "build:css": "sass ./styles/stylesheet.scss ./dist/styles/stylesheet.css --style compressed && sass ./styles/stylesheet.scss ./styles/stylesheet.css",
     "build:minifyhtml": "htmlminify index.html -o ./dist/index.html",
     "build:assets": "cp -r ./assets ./dist",
     "build:invoice": "cp -r ./invoice ./dist",

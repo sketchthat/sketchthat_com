@@ -13,13 +13,10 @@
         "value" : "max-age=604800"
       } ]
     }, {
-      "source" : "**/*.@(jpg|jpeg|gif|png|svg|otf)",
+      "source" : "**/*.@(jpg|jpeg|gif|png|svg|otf|webp)",
       "headers" : [ {
         "key" : "Cache-Control",
         "value" : "max-age=604800"
-      }, {
-        "key" : "Access-Control-Allow-Origin",
-        "value": "*"
       } ]
     } ]
   }
