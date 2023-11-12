@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: node:8.14
+      - image: node:20.9.0
     steps:
       - checkout
       - restore_cache:
