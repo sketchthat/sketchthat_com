@@ -2,7 +2,8 @@ name: SketchThat - Build & Deploy
 run-name: ${{ github.actor }} Build & Deploy
 on: [push]
 jobs:
-  Default:
+  deploy:
+    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
