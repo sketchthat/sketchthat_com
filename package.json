@@ -9,9 +9,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build:dist && npm run build:css && npm run build:uglifycss && npm run build:minifyhtml && npm run build:assets && npm run build:favicon && npm run build:invoice",
+    "build": "npm run build:dist && npm run build:css && npm run build:minifyhtml && npm run build:assets && npm run build:favicon && npm run build:invoice",
     "build:dist": "rm -Rf ./dist && mkdir ./dist",
-    "build:css": "sass ./styles/stylesheet.scss ./dist/stylesheet.css --style compressed && sass ./styles/stylesheet.scss ./styles/stylesheet.css",
+    "build:css": "sass ./styles/stylesheet.scss ./dist/styles/stylesheet.css --style compressed && sass ./styles/stylesheet.scss ./styles/stylesheet.css",
     "build:minifyhtml": "htmlminify index.html -o ./dist/index.html",
     "build:assets": "cp -r ./assets ./dist",
     "build:invoice": "cp -r ./invoice ./dist",
