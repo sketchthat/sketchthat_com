@@ -1,8 +1,10 @@
 name: SketchThat - Build & Deploy
 run-name: ${{ github.actor }} Build & Deploy
-on: [push]
+on:
+  push:
+    branches: ["master"]
 jobs:
-  Default:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
